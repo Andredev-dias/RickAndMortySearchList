@@ -42,6 +42,34 @@ export const WrapMap = styled.div`
   justify-content: center;
   padding: 3rem;
   gap: 3rem;
+  animation: each 200ms linear;
+  animation-fill-mode: both;
+  @keyframes each {
+  0%{
+   bottom: -500px;
+   opacity: 0.1;
+  }
+  100%{
+    bottom: 0;
+    opacity:1;
+  }
+}
+.animation:nth-child(1) {  -webkit-animation: each 400ms linear forwards; }
+.animation:nth-child(2) {  -webkit-animation: each 600ms linear forwards; }
+.animation:nth-child(3) {  -webkit-animation: each 800ms linear forwards;}
+.animation:nth-child(4) {  -webkit-animation: each 1000ms linear forwards; }
+.animation:nth-child(5) {  -webkit-animation: each 1200ms linear forwards; }
+.animation:nth-child(6) {  -webkit-animation: each 1400ms linear forwards; }
+.animation:nth-child(7) {  -webkit-animation: each 1600ms linear forwards; }
+.animation:nth-child(8) {  -webkit-animation: each 1800ms linear forwards; }
+.animation:nth-child(9) {  -webkit-animation: each 2000ms linear forwards; }
+.animation:nth-child(10) {  -webkit-animation: each 2200ms linear forwards; }
+.animation:nth-child(11) {  -webkit-animation: each 2400ms linear forwards; }
+.animation:nth-child(12) {  -webkit-animation: each 2600ms linear forwards; }
+.animation:nth-child(13) {  -webkit-animation: each 2800ms linear forwards;}
+.animation:nth-child(14) {  -webkit-animation: each 3000ms linear forwards; }
+.animation:nth-child(15) {  -webkit-animation: each 3200ms linear forwards; }
+
   `;
 
 export const WrapSearch = styled.div`
@@ -144,9 +172,10 @@ export const WrapCard = styled.div`
  background-color: var(--background);
  padding: 1rem;
  border-radius: 20px;
+
  :hover{
   box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
-  transition: all 300ms ease-in-out 50ms;
+  transition: all 500ms ease-in-out;
 }
 `;
 

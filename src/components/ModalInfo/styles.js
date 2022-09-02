@@ -14,6 +14,7 @@ z-index: 999;
 border: 2px solid var(--primary);
 border-radius: 20px;
 box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+animation: fromTop 1000ms ease;
 button{
     width: 50px;
     height: 50px;
@@ -33,7 +34,7 @@ button:hover{
   border: 1px solid var(--primary);
   color: var(--words);
   box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
-  transition: all 300ms ease-in-out 50ms;
+  transition: all 300ms linear;
   cursor: pointer;
 }
 img{
@@ -43,5 +44,27 @@ img{
 }
 p strong{
     color: var(--words);
+}
+
+@keyframes fromTop {
+  0%{
+   top: -100px;
+   left:-100px;
+   opacity: 0.1;
+  }
+  30%{
+   opacity: 0.2;
+  }
+  50%{
+   opacity: 0.4;
+  }
+  75%{
+   opacity: 0.7;
+  }
+  100%{
+    top: 50%;
+    left:50%;
+    opacity:1;
+  }
 }
 `;

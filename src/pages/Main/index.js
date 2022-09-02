@@ -58,7 +58,7 @@ useEffect(() => {
             {caracters.map((item, index) =>
             {if(item.name.toLowerCase().includes(search.toLowerCase()))  
             return(
-            <WrapCard key={item.id}>
+            <WrapCard key={item.id} className="animation">
                 <WrapImageCard>
                 <CardImage src={item.image} alt="Card Image"/>
                 </WrapImageCard>
