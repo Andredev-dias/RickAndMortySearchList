@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 position: fixed;
-top: 50%;
-left: 50%;
+top: 20%;
+left: 40%;
 transform: translate(-50%, -50%);
 width: auto;
 height: auto;
@@ -14,7 +14,7 @@ z-index: 999;
 border: 2px solid var(--primary);
 border-radius: 20px;
 box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-animation: fromTop 1000ms ease;
+/* animation: fromTop 1000ms ease; */
 button{
     width: 50px;
     height: 50px;

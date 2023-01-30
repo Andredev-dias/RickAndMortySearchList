@@ -2,8 +2,11 @@ import React from 'react';
 import
 {Container,
 } from './styles';
+import Draggable from 'react-draggable';
+
 const ModalInfo = (props) => {
     return(
+        <Draggable>
         <Container>
             <button onClick={props.close}>&#128473;</button><br></br>
             <img src={props.data.image}/>
@@ -21,6 +24,7 @@ const ModalInfo = (props) => {
                 second: "numeric"
                 })}</p>
         </Container>
+        </Draggable>
     )
 }
 export default ModalInfo;
